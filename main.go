@@ -41,10 +41,10 @@ func main() {
 		return
 	}
 
-	ticker := time.NewTicker(1 * time.Second)
+	ticker := time.NewTicker(1 * time.Minute)
 	defer ticker.Stop()
 
-	timeout := time.After(5 * time.Minute) // 5時間後に終了
+	//timeout := time.After(5 * time.Minute) // 5時間後に終了
 
 	for {
 		select {
@@ -55,9 +55,9 @@ func main() {
 			}
 			//fmt.Println(responseData)
 			connectToInfluxDB(responseData)
-		case <-timeout:
-			fmt.Println("終了:", time.Now().Format("2006-01-02 15:04:05"))
-			return
+		//case <-timeout:
+		//	fmt.Println("終了:", time.Now().Format("2006-01-02 15:04:05"))
+		//	return
 		}
 	}
 }

@@ -53,8 +53,7 @@ func main() {
 		fmt.Println("Error:", err)
 		return
 	}
-	// data,err := getJSONResponse(WoIOSensor, switchbottoken, switchbotsecret)
-	// fmt.Println(string(data))
+
 	ticker := time.NewTicker(1 * time.Minute)
 	defer ticker.Stop()
 

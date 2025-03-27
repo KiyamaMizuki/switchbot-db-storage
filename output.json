@@ -1,0 +1,76 @@
+#getDeviceList実行結果
+{
+  "statusCode": 100,
+  "body": {
+    "deviceList": [
+      {
+        "deviceId": "################",
+        "deviceName": "気化式加湿器 DA",
+        "deviceType": "Humidifier2",
+        "enableCloudService": true,
+        "hubDeviceId": ""
+      },
+      {
+        "deviceId": "################",
+        "deviceName": "CO2センサー（温湿度計） 24",
+        "deviceType": "MeterPro(CO2)",
+        "enableCloudService": true,
+        "hubDeviceId": "000000000000"
+      },
+      {
+        "deviceId": "################",
+        "deviceName": "防水温湿度計 55",
+        "deviceType": "WoIOSensor",
+        "enableCloudService": true,
+        "hubDeviceId": "000000000000"
+      },
+      {
+        "deviceId": "################",
+        "deviceName": "ハブミニ 08",
+        "deviceType": "Hub Mini",
+        "enableCloudService": true,
+        "hubDeviceId": "000000000000"
+      },
+      {
+        "deviceId": "################",
+        "deviceName": "カーテン大窓",
+        "deviceType": "Curtain3",
+        "enableCloudService": true,
+        "hubDeviceId": "E07217CCDC08",
+        "curtainDevicesIds": [
+          "################"
+        ],
+        "calibrate": true,
+        "group": false,
+        "master": true,
+        "openDirection": "left"
+      }
+    ],
+    "infraredRemoteList": [
+      {
+        "deviceId": "################",
+        "deviceName": "エアコン",
+        "remoteType": "Air Conditioner",
+        "hubDeviceId": "E07217CCDC08"
+      },
+      {
+        "deviceId": "################",
+        "deviceName": "ライト",
+        "remoteType": "DIY Light",
+        "hubDeviceId": "E07217CCDC08"
+      }
+    ]
+  },
+  "message": "success"
+}
+
+#デバイス情報取得
+{
+  "battery": 60,
+  "deviceId": "################",
+  "deviceType": "WoIOSensor",
+  "hubDeviceId": "000000000000",
+  "humidity": 77,
+  "temperature": 19.2,
+  "version": "V0.9"
+}
